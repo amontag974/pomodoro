@@ -1,0 +1,11 @@
+.timer-block {
+    background-color: gray;
+    border-color: black;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 2px;
+    display: inline-block;
+    filter: drop-shadow(0px 0px 4px black);
+    margin-bottom: 20px;
+    width: 50%
+}
