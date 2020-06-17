@@ -17,10 +17,10 @@ class Selector extends React.Component {
 
         return (
             <div className='selector'>
+                <label className='selector-label' htmlFor={this.props.description.toLowerCase()}>Select time for {this.props.description.replace("-"," ")}</label>
                 <select value={this.props.value} onChange={(e) => this.handleChange(e)}>
                     {options}
                 </select>
-                <label className='selector-label' htmlFor={this.props.description.toLowerCase()}>Select time for {this.props.description.replace("-"," ")}</label>
                 <br />
             </div>
         );

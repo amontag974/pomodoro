@@ -21,3 +21,19 @@
     padding: 10px;
     width: 40%;
 }
+
+@media (max-width: 800px) {
+    .button {
+        font-size: 30px;
+    }
+}
+
+@media (max-height: 400px) {
+    .button {
+        font-size: 20px;
+    }
+
+    .button-container {
+        padding: 5px;
+    }
+}

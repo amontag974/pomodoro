@@ -2,7 +2,7 @@ import React from 'react';
 
 function Counter(props) {
     return (
-        <p>{props.pomodoroCounter.toString()}/4</p>
+        <p className='counter'>{props.pomodoroCounter.toString()}/4</p>
     );
 }
 

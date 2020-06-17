@@ -1,3 +1,18 @@
 .header {
     font-size: 2em;
+    height: 25%
+}
+
+h1 {
+    margin: 10px;
+}
+
+@media (max-height: 500px) {
+    .header {
+        font-size: 1em;
+    }
+
+    h1 {
+        margin: 5px;
+    }
 }

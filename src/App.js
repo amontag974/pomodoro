@@ -168,6 +168,7 @@ class App extends React.Component {
           onStatusClick={this.changeStatus.bind(this)}
           onResetClick={this.resetTimer.bind(this)}
           pomodoroCounter={this.state.pomodoroCounter}
+          workStatus={this.state.workStatus}
         />
         <TimeSelectors
           onWorkTimeChange={this.workTimeChange.bind(this)}
