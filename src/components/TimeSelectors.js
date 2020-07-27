@@ -3,7 +3,7 @@ import Selector from './Selector';
 
 function TimeSelectors(props) {
     return(
-        <div className="selectors">
+        <div className="selector-container">
             <Selector
                 minTime='25'
                 maxTime='30'

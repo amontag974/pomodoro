@@ -1,13 +1,25 @@
 .timer {
-    font-size: 5em;
-    margin-top: 10px;
-    margin-bottom: 10px
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
 }
 
-@media (max-height: 500px) {
-    .timer {
-        font-size: 3em;
-        margin-top: 7px;
-        margin-bottom: 7px;
-    }
+@media (min-width: 480px) and (min-height: 480px) {
+  .timer {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 720px) and (min-height: 720px) {
+  .timer {
+    font-size: 4.5em;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 960px) and (min-height: 720px) {
+  .timer {
+    font-size: 6em;
+  }
 }

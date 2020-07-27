@@ -1,10 +1,14 @@
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
     border-color: black;
-    border-radius: 15px;
-    font-size: 45px;
+    border-radius: 7px;
+    color: black;
     font-weight: 700;
     font-family: 'Catamaran', sans-serif;
-    width: 100%;
+    width: 40%;
 }
 
 .button:hover {
@@ -12,28 +16,52 @@
     filter: drop-shadow(0px 0px 2px black);
 }
 
-.button:focus {
-    outline: 0;
-}
+.button:focus { outline: 0; }
 
 .button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 5px 10px;
+    width: 80%;
+}
+
+@media (min-width: 480px) and (min-height: 480px) {
+  .button {
+    font-size: 20px;
+  }
+
+  .button-text {
     display: inline-block;
-    padding: 10px;
-    width: 40%;
+    height: 20px;
+    line-height: 22px;
+  }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 720px) and (min-height: 720px) {
+  .button {
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .button-text {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .button-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 960px) and (min-height: 720px) {
     .button {
-        font-size: 4vw;
+      font-size: 40px;
+      padding-top: 8px;
+      padding-bottom: 8px;
     }
-}
-
-@media (max-height: 400px) {
-    .button {
-        font-size: 4vw;
-    }
-
-    .button-container {
-        padding: 5px;
-    }
-}
+  }

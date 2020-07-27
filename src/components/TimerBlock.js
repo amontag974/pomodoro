@@ -18,23 +18,27 @@ function TimerBlock(props) {
 
     return(
         <div className='timer-block'>
-            <WorkStatus 
-                workStatus={workStatus}
-            />
+            <div className='timer-status'>
+                <WorkStatus 
+                    workStatus={workStatus}
+                />
+                <Counter 
+                    pomodoroCounter={props.pomodoroCounter}
+                />
+            </div>
             <Timer 
                 timeRemaining={props.timeRemaining}
             />
-            <Button 
-                text={status}
-                onClick={props.onStatusClick}
-            />
-            <Button 
-                text='RESET'
-                onClick={props.onResetClick}
-            />
-            <Counter 
-                pomodoroCounter={props.pomodoroCounter}
-            />
+            <div className='button-container'>
+                <Button 
+                    text={status}
+                    onClick={props.onStatusClick}
+                />
+                <Button 
+                    text='RESET'
+                    onClick={props.onResetClick}
+                />
+            </div>
         </div>
     );
 }
